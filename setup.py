@@ -4,15 +4,15 @@ with open("app/README.md", "r") as f:
     long_description = f.read()
 
 setup(
-    name="noise_utils",
+    name="dynamic_sys",
     version="0.0.10",
-    description="Utils for noise cancellation project",
+    description="Implementation of ball in magnetic field",
     package_dir={"": "app"},
     packages=find_packages(where="app"),
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/vladch/noise-cancelation-utils",
-    author="vladch",
+    url="https://github.com/AMGureev/dynamic_sys",
+    author="AMGureev",
     author_email="",
     license="MIT",
     classifiers=[
@@ -20,7 +20,7 @@ setup(
         "Programming Language :: Python :: 3.8",
         "Operating System :: OS Independent",
     ],
-    install_requires=["numpy", "perlin-noise", "librosa", "soundfile", "tqdm"],
+    install_requires=["numpy"],
     extras_require={
         "dev": ["pytest>=7.0", "twine>=4.0.2"],
     },

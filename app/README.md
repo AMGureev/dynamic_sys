@@ -1,1 +1,1 @@
-# Utilities for noise related projects
+# Ball in magnetic field

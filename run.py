@@ -1,5 +1,4 @@
-from noise_utils import (
-    Noisemaker,
-    SignalGenerator,
-    DataPreparator
+from dynamic_sys import (
+    DataGen,
+    BallMagSystem
 )

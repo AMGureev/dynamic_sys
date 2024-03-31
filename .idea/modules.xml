@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/noise_utils.iml" filepath="$PROJECT_DIR$/.idea/noise_utils.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/dynamic_sys.iml" filepath="$PROJECT_DIR$/.idea/dynamic_sys.iml" />
     </modules>
   </component>
 </project>

@@ -1,8 +1,4 @@
 numpy
-perlin-noise
-librosa
-soundfile
-tqdm
 
 [dev]
 pytest>=7.0

@@ -1,0 +1,11 @@
+setup.py
+app/dynamic_sys/__init__.py
+app/dynamic_sys.egg-info/PKG-INFO
+app/dynamic_sys.egg-info/SOURCES.txt
+app/dynamic_sys.egg-info/dependency_links.txt
+app/dynamic_sys.egg-info/requires.txt
+app/dynamic_sys.egg-info/top_level.txt
+app/dynamic_sys/src/BallMagSystem.py
+app/dynamic_sys/src/DataGen.py
+app/dynamic_sys/src/__init__.py
+app/dynamic_sys/test/__init__.py
