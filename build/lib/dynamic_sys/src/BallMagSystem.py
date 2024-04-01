@@ -2,7 +2,7 @@ import numpy as np
 
 # Класс для симуляции динамической системы
 class BallMagSystem:
-    APPROX_Z = 0.04
+    APPROX_Z = 0.1
 
     def __current(self, u: float) -> float:
         """
@@ -13,7 +13,7 @@ class BallMagSystem:
         """
         r = self.constant_R
 
-        current = u / r
+        current = u * r
         return current
 
     def __ball_acc(self, f: float) -> float:
@@ -47,7 +47,7 @@ class BallMagSystem:
 
         vel = min(self.ball_vel + acc * dt, 2)
         pos = self.ball_pos + vel * dt
-        if pos <= BallMagSystem.APPROX_Z:
+        if pos <= 0:
             pos = BallMagSystem.APPROX_Z
             vel = 0
         elif pos >= self.ball_ceiling and not self.ignore_ceiling:
@@ -64,7 +64,7 @@ class BallMagSystem:
         ignore_ceiling: True - ограничить макс. высоту мячика, False - не ограничивать
         """
 
-        self.ball_pos = 1
+        self.ball_pos = 0.5
         self.ball_vel = 0
 
         self.ball_ceiling = 5
@@ -73,7 +73,7 @@ class BallMagSystem:
         self.last_current = 0
 
         self.constant_L = 0.2
-        self.constant_R = 2
+        self.constant_R = 3
         self.constant_g = 9.8
         self.constant_a = 0.3
         self.constant_b = 0.05
